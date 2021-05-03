@@ -12,10 +12,7 @@ function deObjetoAmatriz(objeto){
   //Escribe tu código aquí
  return Object.entries(objeto);
   }
-// var array = []
-//for (let prop in objeto)
-//Array.push([prop,objeto[prop]])
-// return array
+
  
 function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
@@ -23,19 +20,15 @@ function numberOfCharacters(string) {
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
   const objeto = {};
-
     for (let i = 0; i < string.length; i++) {
-
-        let letra = string.charAt(i);
-
-        if (objeto[letra]) { 
-            objeto[letra]++
-        } 
-        else {
-            objeto[letra] = 1; 
-        }
-
-    }
+     let letra = string.charAt(i)
+    if (objeto[letra]) { 
+     objeto[letra]++
+  } 
+ else {
+   objeto[letra] = 1; 
+  }
+ }
 
     return objeto;
 }
@@ -54,33 +47,20 @@ function capToFront(string) {
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
   let stringArray = Array.from(string);
-
     let mayusculas = [];
     let minusculas = [];
-
     for (let indice = 0; indice < stringArray.length; indice++) {
-        
         const letraDelArray = stringArray[indice];
-        
         const letraDelArrayMayuscula = letraDelArray.toUpperCase()
-
         if (letraDelArray === letraDelArrayMayuscula)  {
             mayusculas.push(letraDelArray);
         } else {
             minusculas.push(letraDelArray);
         }
     }
-
     return mayusculas.join("") + minusculas.join("");
 }
-//var min = []
-//var may = []
-//for (i = 0; i menor que s.length; i++)
-// if(s[i].toUppercase() === s[i]) {
-//may+= s[i]
-//else
-//min+=s[i]
-// return may+min
+
 
 function asAmirror(str) {
   //La función recibe una frase. 
