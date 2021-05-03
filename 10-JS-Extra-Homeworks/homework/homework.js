@@ -11,9 +11,8 @@ function deObjetoAmatriz(objeto){
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
  return Object.entries(objeto);
-  }
+}
 
- 
 function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
   //en formato par clave-valor.
@@ -29,18 +28,9 @@ function numberOfCharacters(string) {
    objeto[letra] = 1; 
   }
  }
-
     return objeto;
 }
-//var objeto = {}
-//for (i = 0; i <string.length;i++)
-//if (obj[string[i]]){
-// (obj[string[i]]+=1)
-//else
-//obj[string[i]]=1;
-//return obj
-//
-//
+
 function capToFront(string) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
@@ -129,8 +119,6 @@ function buscoInterseccion(arreglo1, arreglo2){
   }
   return interseccion;
 }
-
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
