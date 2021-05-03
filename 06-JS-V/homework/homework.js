@@ -1,9 +1,3 @@
-// No cambies los nombres de las funciones.
-// THIS ES UNA REFERENCIA AL OBJETO DESDE EL QUE SE LLAMA LA FUNCION
-// Y VA A APUNTAR NORMALMENTE AL OBJETO DESDE EL QUE SE LLAMA LA FUNCION
-//SI SE EJECUTA UN METODO(ES DECIR UNA FUNCION DENTRO DE UN OBJETO, THIS HACE REFERENCIA A ESE OBJ.)
-//SI SE EJECUTA UNA FUNCION NORMAL, THIS VA A HACER REFERENCIA AL OBJETO GLOBAL.
-
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
   // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
